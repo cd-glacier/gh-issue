@@ -9,7 +9,7 @@ else
   preview_height=0
 fi
 
-if [[ "$1" == "mine" ]]; then
+if [[ "$1" == "--me" || "$1" == "-me" ]]; then
   GH_FORCE_TTY='100%' gh issue list --state all --assignee @me --limit 200 |
     tail -n +4 |
     fzf --ansi \

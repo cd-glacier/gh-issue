@@ -25,7 +25,7 @@ gh issues
 
 
 ```
-gh issues mine
+gh issues --me
 ```
 
 
